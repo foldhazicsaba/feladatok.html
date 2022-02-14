@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feladat1.html</title>
+</head>
+<body>
+<div id="line1">
+    <table onmouseover="showMore()" border="1">
+        <tr>  
+            <td>Húzd ide az egeret!</td>
+        </tr>
+    </table>
+</div>
+
+<script>
+function showMore(){
+    document.getElementById("line1").innerHTML = "<table border='1' onmouseout='showLess()'><tr><td>Húzd ide az egeret!</td></tr></table>";
+}
+
+function showLess(){
+    document.getElementById("line1").innerHTML = "<table border='1' onmouseover='showMore()'><tr><td>Sikerült</td></tr></table>";
+}
+</script>
+</body>
+</html>
